@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Primary Colors */
+  --color-primary-50: #F5F3FF;
+  --color-primary-100: #EDE9FE;
+  --color-primary-200: #DDD6FE;
+  --color-primary-300: #C4B5FD;
+  --color-primary-400: #A78BFA;
+  --color-primary-500: #8B5CF6;
+  --color-primary-600: red;  /**/
+  --color-primary-700: #6D28D9;
+  --color-primary-800: #5B21B6;
+  --color-primary-900: #4C1D95;
+
+  /* Brand Secondary Colors */
+  --color-secondary-50: #ECFEFF;
+  --color-secondary-100: #CFFAFE;
+  --color-secondary-200: #A5F3FC;
+  --color-secondary-300: #67E8F9;
+  --color-secondary-400: #22D3EE;
+  --color-secondary-500: #06B6D4;
+  --color-secondary-600: #0891B2;
+  --color-secondary-700: #0E7490;
+  --color-secondary-800: #155E75;
+  --color-secondary-900: #164E63;
+
+  /* Semantic Colors */
+  --color-error: #F04438;
+  --color-warning: #F79009;
+  --color-success: #17B26A;
+
+  /* Neutral Colors */
+  --color-background: #FFFFFF;
+  --color-surface: #F9FAFB;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #475569;
+  --color-text-disabled: #94A3B8;
+  --color-border: #E2E8F0;
+}
+
+@layer base {
+  body {
+    font-family: 'Urbanist', ui-sans-serif, system-ui, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+  }
+}
+
+@layer components {
+  .text-h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  
+  .text-h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  
+  .text-h3 {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  
+  .text-body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  
+  .text-small {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+ 
+
+  
+  .property-metric {
+    svg path, svg ellipse  {
+      stroke: var(--color-primary-500);
+    }
+  }
+
+  .svg-primary-700  {
+    svg path, svg ellipse {
+      stroke: red
+    }
+   }
+
+  a  {
+    svg path, svg ellipse {
+      stroke: var(--color-primary-700);
+    }
+   }
+}
